@@ -14,7 +14,7 @@ class ServiceCalltoBackend extends StatefulWidget {
 class _ServiceCalltoBackendState extends State<ServiceCalltoBackend> {
   // ignore: non_constant_identifier_names
   void ExtractRequest() async {
-    var url = Uri.parse('http://192.168.0.241:3000/extract');
+    var url = Uri.parse('http://Device-IPv4:PORT/extract');
     var queryParams = {"id": BRoTM_UserID};
     var response = await http.get(url.replace(queryParameters: queryParams));
     var responseData =
